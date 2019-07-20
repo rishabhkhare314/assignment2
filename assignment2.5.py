@@ -26,7 +26,11 @@ for x in matches:
         toss_match_winners[x['toss_winner']]=toss_match_winners[x['toss_winner']]+1
 a = dict({k: float(toss_winners[k])/toss_match_winners[k] for k in toss_match_winners.keys() & toss_winners})
 b = dict({k: int(100*(toss_match_winners[k])/toss_winners[k]) for k in toss_winners.keys() & toss_match_winners})
-
+print(""" 
+                Predict the match Winner.
+                if which team wins the toss that
+                how much chances to win the match 
+           """)
 #print(total_match)
 plt.bar(b.keys(),b  .values(),width= 0.5, color='g')
 plt.xlabel("Bowlers",fontweight='bold')
