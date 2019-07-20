@@ -6,7 +6,7 @@ winner_count={}
 reader= csv.DictReader(open('G:\desktop\ipl/matches.csv'))
 for raw in reader:
     winner.append(raw['winner'])
-    print(winner)
+ #   print(winner)
     year=list(set(years))
     if raw['winner'] not in winner_count.keys():
         winner_count[(raw['winner'])]=0
